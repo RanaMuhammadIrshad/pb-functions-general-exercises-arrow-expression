@@ -339,9 +339,9 @@ console.log(arrMyFirstLetterWord);
 console.log(`------13-function expression----`);
 
 const isNumStrArr = function (input) {
-  if (typeof input === "string") return `I am string`;
-  if (typeof input === "number") return `I am number`;
-  if (input instanceof Array) return `I am array`;
+  if (typeof input === "string") return `I am string and length is ${input.length}`;
+  if (input instanceof Array) return `I am array and length is ${input.length}`;
+  else return `null`;
 };
 
 const result = isNumStrArr([1]);
